@@ -1,0 +1,16 @@
+#include<stdio.h>
+int main() {
+	int a,b[50],c=0;
+	scanf("%d", &a);
+	for (int i = 0; i < a-1; i++) {
+		scanf("%d", &b[i]);
+	}
+	for (int i = 1; i <= a; i++) {
+		c += i;
+	}
+	for (int i = 0; i < a - 1; i++) {
+		c -= b[i];
+	}
+	printf("%d", c);
+	return 0;
+}
