@@ -1,0 +1,17 @@
+#include<stdio.h>
+int main() {
+	char a[21], b[21], c[21];
+	scanf("%s", a);
+	for (int i = 0; a[i] != NULL; i++) {
+		b[i] = a[i] + 2;
+		c[i] = (a[i] * 7) % 80 + 48;
+	}
+	for (int i = 0; a[i] != NULL; i++) {
+		printf("%c", b[i]);
+	}
+	printf("\n");
+	for (int i = 0; a[i] != NULL; i++) {
+		printf("%c", c[i]);
+	}
+	return 0;
+}
