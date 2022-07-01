@@ -1,0 +1,44 @@
+#include<stdio.h>
+#include<string.h>
+int main() {
+	char a[101], b[101];
+	scanf("%s %s", a, b);
+	if (strlen(a) > strlen(b)) {
+		for (int i = 0; b[i] != NULL; i++) {
+			printf("%c", b[i]);
+		}
+		printf(" ");
+		for (int i = 0; a[i] != NULL; i++) {
+			printf("%c", a[i]);
+		}
+	}
+	else if (strlen(a) < strlen(b)) {
+		for (int i = 0; a[i] != NULL; i++) {
+			printf("%c", a[i]);
+		}
+		printf(" ");
+		for (int i = 0; b[i] != NULL; i++) {
+			printf("%c", b[i]);
+		}
+	}
+	else if (strcmp(a, b)>0) {
+		for (int i = 0; b[i] != NULL; i++) {
+			printf("%c", b[i]);
+		}
+		printf(" ");
+		for (int i = 0; a[i] != NULL; i++) {
+			printf("%c", a[i]);
+		}
+	}
+	else
+	{
+		for (int i = 0; a[i] != NULL; i++) {
+			printf("%c", a[i]);
+		}
+		printf(" ");
+		for (int i = 0; b[i] != NULL; i++) {
+			printf("%c", b[i]);
+		}
+	}
+	return 0;
+}
