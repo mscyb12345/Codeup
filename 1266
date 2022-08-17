@@ -1,0 +1,11 @@
+#include<stdio.h>
+int main(){
+    int a,b[1000],s=0;
+    scanf("%d",&a);
+    for(int i=0;i<a;i++){
+        scanf("%d",&b[i]);
+        s+=b[i];
+    }
+    printf("%d",s);
+    return 0;
+}
