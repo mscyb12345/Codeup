@@ -1,0 +1,30 @@
+#include<stdio.h>
+int main(){
+    int a,c,i;
+    char b;
+    scanf("%d",&c);
+    for(i=1;i<100;i++){
+        scanf("%c%d",&b,&a);
+        switch(b){
+            case '+':
+            c+=a;
+            break;
+            case '-':
+            c-=a;
+            break;
+            case '*':
+            c*=a;
+            break;
+            case '/':
+            c/=a;
+            break;
+            default:
+            break;
+        }
+        if(b=='='){
+            break;
+        }
+    }
+    printf("%d",c);
+    return 0;
+}
